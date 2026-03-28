@@ -38,4 +38,9 @@ public class StringController {
     public ResponseEntity<?> delete(@RequestParam("key") String key) {
         return ResponseEntity.ok(this.service.deleteKey(key) ? key +" is deleted." : "Key deletion failed.");
     }
+//    check key exist
+    @GetMapping("/key-exist")
+    public ResponseEntity<?> keyExist(@RequestParam("key") String key) {
+        return ResponseEntity.ok(this.service.keyExist(key) ? key +" exist" : key +" not exist.");
+    }
 }

@@ -32,4 +32,8 @@ public class StringService {
     public Long getTTL(String key) {
         return redisTemplate.getExpire(key);
     }
+//    check if key exist
+    public Boolean keyExist(String key) {
+        return redisTemplate.hasKey(key);
+    }
 }
