@@ -3,7 +3,6 @@ package com.gaurav.RedisDataType.service;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
-import java.time.temporal.ChronoUnit;
 import java.util.concurrent.TimeUnit;
 
 @Service

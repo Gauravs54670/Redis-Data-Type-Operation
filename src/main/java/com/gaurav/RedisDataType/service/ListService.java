@@ -7,8 +7,8 @@ import java.util.List;
 
 @Service
 public class ListService {
-    /*
-      * LIST Data Type
+    /**
+     * LIST Data Type
      * ─────────────────────────────────────────────
      * Ordered collection. Can push/pop from both ends.
      * Think of it like a LinkedList or Queue/Stack.
